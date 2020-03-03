@@ -1,0 +1,38 @@
+dmenu - dynamic menu
+====================
+dmenu is an efficient dynamic menu for X.
+
+
+Requirements
+------------
+In order to build dmenu you need the Xlib header files.
+
+
+Installation
+------------
+Edit config.mk to match your local setup (dmenu is installed into
+the /usr/local namespace by default).
+
+Afterwards enter the following command to build and install dmenu
+(if necessary as root):
+
+    make clean install
+
+
+Running dmenu
+-------------
+See the man page for details.
+
+Build Additions
+-------------
+
+My build of dmenu adds three patches already made for dmenu:
+
+- dmenu-border (self explainatory)
+- dmenu-center (centers on the screen, does not center text)
+- dmenu-linehight (set height of each line of an option in dmenu)
+
+It also changes the colorscheme a little. I don't plan to change
+any other parts of dmenu currently but am looking at ways to 
+center the text in the middle of dmenu and include extra info
+such as install date/location.
